@@ -3,57 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leviathan - Blox Fruits | Oficial Kaynã</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Loja Farinha Style - Oficial Kaynã</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 24px;
+      color: #111;
+      cursor: pointer;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ed6c02;
+    }
+
+    .banner {
+      background: url('https://lojafarinha.shop/wp-content/uploads/2021/07/banner-loja.png') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 42px;
+      font-weight: 700;
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+      user-select: none;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.07);
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgb(0 0 0 / 0.12);
+    }
+
+    .product-card img {
+      width: 100%;
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .product-info {
+      padding: 15px 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-title {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .product-desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+
+    .product-price {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ed6c02;
+      margin-bottom: 15px;
+    }
+
+    .buy-btn {
+      background: #ed6c02;
+      border: none;
+      padding: 12px 0;
+      border-radius: 8px;
+      font-weight: 700;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #c25601;
+    }
+
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    /* Responsividade simples */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+      .banner {
+        font-size: 28px;
+        height: 250px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <header class="header">
-    <h1>Leviathan - O Monstro das Profundezas</h1>
-    <nav class="nav">
-      <a href="#historia">História</a>
-      <a href="#builds">Builds Recomendadas</a>
-      <a href="#contato">Contato</a>
+  <header>
+    <div class="logo">FARINHA</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
     </nav>
   </header>
 
-  <main class="main-content">
-    <section id="historia" class="section">
-      <h2>História do Leviathan</h2>
-      <p>
-        Em meio às águas turbulentas do mundo de Blox Fruits, surge uma criatura lendária: o Leviathan.  
-        Dizem que ele é o guardião das profundezas, uma besta colossal que desafia até os mais fortes aventureiros.  
-        Poucos sobrevivem ao seu ataque, mas aqueles que vencem recebem recompensas de valor incalculável.  
-      </p>
-      <p>
-        Muitos contam histórias de caçadas épicas, onde times organizados enfrentaram o monstro com estratégia e coragem,  
-        utilizando armas e habilidades poderosas para derrotar essa ameaça das profundezas.
-      </p>
-    </section>
+  <section class="banner">
+    Aqui É Farinha, Parça! 🔥
+  </section>
 
-    <section id="builds" class="section">
-      <h2>Builds Recomendadas</h2>
-      <ul class="build-list">
-        <li><strong>Magma Full Despertado</strong> – Queime o Leviathan com poder destruidor e resistência incrível.</li>
-        <li><strong>Shark Karate</strong> – Agilidade e golpes mortais para causar dano rápido e sair na boa.</li>
-        <li><strong>Soul Guitar ou DragonStorm</strong> – Controle de área com ataques fortes e estilo insano.</li>
-        <li><strong>DragonHeart</strong> – Defesa e poder balanceado para durar na luta e causar dano constante.</li>
-      </ul>
-    </section>
+  <main>
+    <div class="product-card">
+      <img src="https://lojafarinha.shop/wp-content/uploads/2021/07/produto1.png" alt="Produto 1" />
+      <div class="product-info">
+        <div class="product-title">Produto Massa 1</div>
+        <div class="product-desc">Descrição curta, sem enrolação, só a braba.</div>
+        <div class="product-price">R$ 49,90</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
 
-    <section id="contato" class="section contato-section">
-      <h2>Quer trocar ideia?</h2>
-      <p>Chega junto no meu Discord, tamo firme e forte na caçada ao Leviathan! 👊</p>
-      <a href="https://discord.gg/ADtjJX3Y" target="_blank" class="discord-link" aria-label="Entrar no Discord do Kaynã">
-        <i class="fab fa-discord"></i> Entrar no Discord
-      </a>
-    </section>
+    <div class="product-card">
+      <img src="https://lojafarinha.shop/wp-content/uploads/2021/07/produto2.png" alt="Produto 2" />
+      <div class="product-info">
+        <div class="product-title">Produto Massa 2</div>
+        <div class="product-desc">Descrição curta, sem enrolação, só a braba.</div>
+        <div class="product-price">R$ 79,90</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://lojafarinha.shop/wp-content/uploads/2021/07/produto3.png" alt="Produto 3" />
+      <div class="product-info">
+        <div class="product-title">Produto Massa 3</div>
+        <div class="product-desc">Descrição curta, sem enrolação, só a braba.</div>
+        <div class="product-price">R$ 29,90</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://lojafarinha.shop/wp-content/uploads/2021/07/produto4.png" alt="Produto 4" />
+      <div class="product-info">
+        <div class="product-title">Produto Massa 4</div>
+        <div class="product-desc">Descrição curta, sem enrolação, só a braba.</div>
+        <div class="product-price">R$ 99,90</div>
+        <button class="buy-btn">Comprar</button>
+      </div>
+    </div>
   </main>
 
-  <footer class="footer">
-    <p>© 2025 Oficial Kaynã - Blox Fruits Leviathan</p>
+  <footer>
+    © 2025 Loja Farinha Style — Feito pelo oficial Kaynã, o chefe da bagaça!
   </footer>
 
 </body>
